@@ -1,0 +1,38 @@
+var = to create global variables
+	can redeclared
+	cannot have block scope
+	if var declared inside block scope, that var can be accessed from outside the block 
+
+
+let = to create scope or variable can you replace / replaceable 
+	cannot be redeclared
+	must be declared before use
+	have block scope
+	if let declared inside block scope, that let cannot be accessed from outside the block
+
+const = fixed variable / can't be updated or redeclared within the scope
+	It does not define a constant value. It defines a constant reference to a value.
+	Because of this you can NOT:
+	Reassign a constant value
+	Reassign a constant array
+	Reassign a constant object
+	But you CAN:
+	Change the elements of constant array
+	Change the properties of constant object
+
+
+	always use javascript const when u:
+	1. create a new array, object, function, RegExp
+
+document.getElementById("name_of_id") = to finds a html element and change the element
+
+we can display data in different ways
+
+1. innerHtml => document.getElementById("name_of_id").innerHTML = "result changing element"
+2. write => document.write(); Never call document.write after the document has finished loading. It will overwrite the whole document. but Using document.write() after an HTML document is loaded, will delete all existing HTML 
+3. window alert => to write this you can write like this! window.alert() or like this! alert(). because In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional
+4. console.log => for debugging purpose you can use this! console.log() method in browser to display data
+5. window.print => to print the content of current window you can use this! window.print()
+
+
+
