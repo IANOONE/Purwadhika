@@ -63,7 +63,7 @@ var modal = 15
 
 var year = Math.floor(modal / 365)
 var month = Math.floor(modal % 365 / 30)
-var day = Math.floor(modal % 365 % 30)
+var day = modal % 365 % 30
 
 const result = year + " year " + month + " month " + day + " days"
 
