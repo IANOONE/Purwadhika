@@ -35,4 +35,15 @@ we can display data in different ways
 5. window.print => to print the content of current window you can use this! window.print()
 
 
+THIS in js refers to an object
+"this" is not a variable. It is a keyword. You cannot change the value of "this".
+but "this" keyword refers to different objects depending on how it is used:
+* in an object method, "this" refers to the object
+* alone, "this" refers to the global object
+* in a function, "this" refers to the global object
+* in a function, in strict mode, "this" is undefined
+* in a event, "this" refers to the element that received the event
+* In an event, "this" refers to the element that received the event.
+* Methods like call(), apply(), and bind() can refer "this" to any object.
 
+	

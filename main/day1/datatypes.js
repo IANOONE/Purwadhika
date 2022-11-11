@@ -40,8 +40,42 @@ const hello_world = hello + world
 
 console.log(hello_world);
 
+// 
 
 
 
+//template literal
+let str = `string text baris 1
+ string text baris 2`
+console.log(str);
 
-c
+
+// embedded expression
+const tes = `<h2>${hello} ${world}</h2>,
+my name is Brilian`;
+
+console.log(tes);
+
+// expression interpolation 
+
+a = 10;
+b = 15;
+
+console.log(`jika a = 10 dan b = 15, maka hasil penjumlahannya adalah ${a+b}, bukan ${2*a+b}`);
+
+
+// fragment html
+
+const mhs = {
+    nama: 'wardolahse',
+    umur: 33,
+    nrp: '3331233',
+    email: 'rocketket@rocket.mail'
+}
+
+const el = `<div class="mhs">
+<h2>${mhs.nama}</h2>
+<span class="nrp">${mhs.nrp}</span>
+</div>`
+
+document.body.innerHTML = el;

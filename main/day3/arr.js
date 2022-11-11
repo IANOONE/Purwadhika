@@ -1,0 +1,2 @@
+// simple array
+let arr = []

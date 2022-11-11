@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Purwadhika</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    const bookList = [
+
+        ['buku paket', 6, 20000],
+        ['buku catatan', 7, 15000],
+        ['buku tulis', 2, 15000]
+    ]
+    var shoppingCart = []
+
+    alert(`Welcome to WD Book Store`)
+
+    alert(`List book ready:    
+    
+1. ${bookList[0][0]}
+2. ${bookList[1][0]}
+3. ${bookList[2][0]}
+    `)
+
+
+    let bookChoose = prompt('Choose Book')
+
+
+    for (i = 0; i < bookList.length + 1; i++) {
+        if (bookList[i][0] === bookChoose.toLowerCase()) {
+            var index = i
+            break
+        }
+    }
+    // alert(i);
+    alert(`${bookList[index][0]}
+
+book stock : ${bookList[index][1]}
+price      : ${bookList[index][2]}
+`)
+    let cart = prompt('Buy or Cancel')
+    console.log(cart);
+    if (cart.toLowerCase() == 'buy') {
+        var quantity = prompt(`book stock : ${bookList[index][1]}
+How much?
+`)
+        var bookCart = bookList[index]
+        bookCart[1] = quantity
+        shoppingCart = bookCart
+
+
+    } else if (cart.toLowerCase() == 'cancel') {
+        stop
+    } else {
+        stop
+    }
+    // for (i = 0; i < shoppingCart.length + 1; i++) {
+    //     index = i
+    // }
+
+    alert(shoppingCart);
+    var checkout = prompt(`Checkout, Buy Again, or Cancel`)
+
+
+
+
+    // alert("not found")
+</script>
