@@ -69,7 +69,9 @@ How much?
 
     alert(shoppingCart);
     var checkout = prompt(`Checkout, Buy Again, or Cancel`)
-
+    if ("checkout" == trim(checkout.toLocaleLowerCase())) {
+        alert(shoppingCart)
+    } else if ("buy again" == trim(checkout.toLocaleLowerCase())) {}
 
 
 

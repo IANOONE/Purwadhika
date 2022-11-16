@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Day 5</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    var txtVehic = `Which is your vehicle type ?
+
+1. Car
+2. Motorcyle
+`
+    var txtDurationPark = `How long you will parked the vehicle? (detail in hour and minutes)
+example: 12 hour 59 min
+
+    `
+
+    let vehicleType = prompt(txtVehic)
+    let plateNumber = prompt("Type your plate number!")
+    let durationPark = prompt(txtDurationPark)
+
+    // durationPark = durationPark.split("")
+
+    // var motorPay = 3000
+    // var pay = 0
+
+    function getDuration(duration) {
+
+        duration.split("")
+        if (duration[1] == hour) {
+            // var hourConvert = duration[0] * 60
+            alert("tes1")
+        } else if (duration[1] == min) {
+            // var hourConvert = duration[0]
+            alert("tes2")
+        } else {
+            alert('Following the format')
+            alert("tes3")
+        }
+        // if (duration[2] && duration[3]) {
+        // var minDuration = hourConvert * duration[2]
+        // } else {
+        // minDuration = hourConvert
+
+        // if (minDuration / 60 == 0) {}
+    }
+    getDuration(durationPark)
+</script>

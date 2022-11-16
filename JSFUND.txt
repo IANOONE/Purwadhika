@@ -47,3 +47,25 @@ but "this" keyword refers to different objects depending on how it is used:
 * Methods like call(), apply(), and bind() can refer "this" to any object.
 
 	
+
+// different array.push & array.concat,
+kalo array concat jika ingin menambahkan array dengan array lain yang menyatu
+adalah valuenya
+sedangkan push jika menambahkan array dengan array yg lain yang menyatu adalah
+array type nya yg berisi value
+
+
+
+
+
+// array.splice memotong array yg dipanggil datanya
+
+// array.slice mengambil value tanpa memotong arraynya
+
+// array.map , arrap.find, array.filter merupakan method yang bisa melakukan looping
+	
+// array.map & array.find, array.filter harus di return
+
+// array.filter akan mengembalikan value yang sama di dalam array, dan mengembalikannya dengan dibungkus type array, sehingga jika di dalam array yg kita filter terdapat 2 value yg sama, maka 2 value tersebut akan dikembalikan atau dipanggil
+
+// array find akan mengembalikan value yang sama di dalam array, dan mengembalikannya dengan type data yang kita find, sehingga jika di dalam array yg kita find terdapat 2 value yg sama, makan hanya 1 value yg dikembalikan, yg lainnya tidak karena dianggap sama type datanya
