@@ -74,8 +74,9 @@ let temp1 = 0,
     temp2 = 1,
     temp3 = 0
 
-number = 3
+number = 5
 
+// 
 text = `${number} number(s) of fibonnaci : ${temp1}, ${temp2}`
 
 
@@ -91,7 +92,7 @@ console.log(text);
 
 // input total loop
 text = ""
-number = 10
+number = 15
 for (let i = 1; i <= number; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
         text += ` FuzzBuzz `
@@ -101,7 +102,7 @@ for (let i = 1; i <= number; i++) {
         text += ` Buzz `
     } else {
         text += `${i} `
-            // console.log(i);
+        console.log(i);
     }
 }
 console.log(text);

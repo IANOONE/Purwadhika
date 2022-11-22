@@ -1,5 +1,9 @@
 // area of rectangle
 
+// Pxl
+
+// DECLARE VARIABLE
+
 var p = 5;
 
 var l = 3;
@@ -50,18 +54,36 @@ console.log(c);
 
 
 // difference between dates in days
+
+
+// declare two dates 
 var a = new Date("06/11/2021");
 var b = new Date("06/11/2022");
 
-var differenceTime = b.getTime() - a.getTime();
+
+// convert date to milisecons
+a = a.getTime()
+
+b = b.getTime()
+
+
+// differrent between two dates
+var differenceTime = b - a;
+
+console.log(differenceTime);
 var differenceDays = differenceTime / (1000 * 3600 * 24);
 
 console.log(differenceDays);
 
+
+
+
+
 // convert days to years, months, and days
-var modal = 15
+var modal = 500
 
 var year = Math.floor(modal / 365)
+
 var month = Math.floor(modal % 365 / 30)
 var day = modal % 365 % 30
 

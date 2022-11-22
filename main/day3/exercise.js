@@ -7,6 +7,7 @@ for (let i = 1; i <= range; i++) {
     console.log(`${i}.` + ` ${output} * ${i} = ${result}  \n`);
 }
 
+
 // check whether a string is a palindrome or not
 
 let str = "Race Car"
