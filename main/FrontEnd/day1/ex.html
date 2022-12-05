@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd-Ex-D1</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .container {
+            width: 500px;
+            height: 250px;
+            border: 1  px;
+            border-style: solid;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .background-img{
+            width: 350px;
+            height: 70px;
+            align-content: center;
+            margin-bottom: 20px;
+            margin: 10px;
+        }
+
+        .title{
+            width: 350px;
+            height: 150px;
+            align-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: center;
+            
+        }
+        
+        .background-img img{
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+        }
+        
+        .main-title, .sub-title, .btn-title{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .txt-main-title{
+            font-weight: 700;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .txt-sub-title{
+            padding-top: 40px;
+        }
+
+        .btn-title button {
+            background-color: rgb(64, 94, 245);
+            color: white;
+            border-style: double;
+            border-width: 4px;
+            border-radius: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+
+    </style>
+</head>
+
+    <div class="container">
+        <div class="background-img">
+            <img src="./background1.jpg">
+        </div>
+        <div class="title">             
+            <div class="main-title">
+                <p class="txt-main-title">Beautiful!</p>
+            </div>
+            <div class="sub-title">
+                <p class="txt-sub-title">Modal with a custom image</p>
+            </div>
+            <div class="btn-title"><button type="button">Lovely!</button></div>
+        </div>
+    </div>
+</body>
+</html>

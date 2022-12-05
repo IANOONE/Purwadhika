@@ -1,3 +1,24 @@
+
+function tes(n){
+  var i =  n.map(function(e) {
+        return e * 2
+    });
+
+    return i
+}
+
+var angka = [1,2,3,4,5,6]
+console.log(tes(angka));
+
+function convertArr(n) {
+
+    var res = n.split(" ")
+
+    return res
+    
+}
+console.log(convertArr("Hello World"));
+
 // function loop the number of times according to the input we provide
 function fizzBuzz(n) {
 
@@ -105,3 +126,6 @@ for (let i = 1; i <= high; i++) {
     res += "\n"
 }
 console.log(res);
+
+module.exports = {fizzBuzz, toArray}
+

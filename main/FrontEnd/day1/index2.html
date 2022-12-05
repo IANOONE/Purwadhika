@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="text"><br>
+        <input type="password"><br>
+        <input type="email"><br>
+        <input type="number" min="1" max="10"><br>
+        <input type="checkbox"><br> <!-- check box only have 1 value; cant use for choose option -->
+        <input type="radio"><br>
+        <input type="submit" value="submit"><br>
+        <textarea cols="30" rows="10"></textarea>
+        <input type="button">
+
+        <hr>
+
+        <button type="button">button</button>
+        <button type="reset">reset</button>
+        <button type="button" onclick="doSomething();">Apply</button>
+    </form>
+
+<hr>
+    <select>
+        <option value="">option1</option>
+        <option selected value="">option2</option>
+        <option value="">option3</option>
+    </select>
+
+    <hr>
+    <p>
+        <label for="user">Username</label>
+        <input type="text" name="text">
+    </p>
+    <p>
+        <label for="pass">Password</label>
+        <input type="password" name="pass">
+    </p>
+<hr>
+<fieldset>
+<legend>Data diri</legend>    
+<p>
+    <label for="nama">Nama</label>
+    <input type="text" name="nama">
+</p>
+</fieldset>
+
+<div>div 1</div>
+<div>div 2</div>
+<div>div 3</div>
+
+
+<div style="background-color:aquamarine; width:300px; height:300px; border: 10px; border-style: solid; margin-left: 100px;"></div>
+
+
+</body>
+
+<script>
+    function doSomething(){
+        alert("apply")
+    }
+</script>
+</html>
