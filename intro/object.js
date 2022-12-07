@@ -119,6 +119,38 @@ const todos = [{
 console.log(todos);
 console.log(todos[1].text);
 
-// json convert
-const todoJson = JSON.stringify(todos)
-console.log(todoJson);
+// // json convert
+// const todoJson = JSON.stringify(todos)
+// console.log(todoJson);
+
+
+// forEach
+var test = ""
+
+
+todos.forEach(e => {
+   console.log(e.text);
+    test += ` ${e.text}` 
+});
+console.log(test);
+
+
+const todoText = todos.map(e => {
+    return (e.text);
+      // test += ` ${e.text}` 
+  });
+  console.log(todoText);
+
+
+const todoFilt = todos.filter(e => {
+    return e.id > 1
+}).map(e=>{
+    return e
+})
+
+console.log(todoFilt);
+
+
+
+
+

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise D-2 FE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+    .navbar{
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+
+    }
+    .home-btn{
+        height: 100%;
+        display: flex; /* we can use inherit also; thats means we following display from parent element */
+        justify-content: space-between;        
+        color: white;
+        align-items: center;
+        
+    }
+
+    .search-btn{
+        width: 50px;
+   }
+    .search-icon{
+        margin: auto;
+        width: 40%;
+    }
+
+    .btn, .search-btn{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .btn{
+        font-size: 15px;
+        height: 100%;
+        width: 100px;
+    }
+
+    .btn:hover{
+        background-color: lightgray;
+        cursor: pointer;
+        color: black;
+    }
+
+    .search-btn:hover{
+        cursor: pointer;
+        background-color: rgba(255, 50, 9, 0.937);
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block; 
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: lightgray;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: whitesmoke;
+    }
+
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn{
+        background-color: black;
+    }
+    
+ 
+
+
+
+
+
+    /* content */
+    .container{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        height: 2000px;
+        min-width: min-content;
+    }
+
+    .header-pic{
+        position: relative;
+        height: fit-content;
+        width: 100%;
+    }
+    .slideshow-pic{
+        height: fit-content;
+    }
+
+
+    .text-pic {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 65px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .text-pic .title {
+        font-size:22px;
+        margin-bottom: 20px;
+    }
+    
+    .text-pic .sub {
+        font-weight: bold; font-size: 15px;
+    }
+
+    .descript{
+        height:max-content;
+        text-align: center;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-left: 250px;
+        padding-right: 250px;
+        display: grid;
+        justify-items: center;
+    }
+
+
+    .title-descript{
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 35px;
+        margin: 10px 0;
+    }
+    
+    .sub-title-descript, .text-descript {
+        margin: 15px 0;
+    }
+
+    .sub-title-descript{
+        font-style: italic;
+        color: lightgray;
+        font-size: 14px;
+    }
+
+    .text-descript{
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    .content-descript{
+        width: 550px;
+        height: 200px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .member-content{
+        width: 150px;
+        display: grid;
+        grid-row-gap: 20px;
+        grid-template-rows: 1fr 8fr;
+        flex-shrink: 1;
+    }
+
+    .pic-member{
+        background-color: aqua;
+        height: 100%;
+        min-width: min-content;
+        border-radius: 8px;
+
+    }
+
+    .pic-member img{
+        object-fit:cover;
+        height: 100%;
+        border-radius: inherit;
+    }
+
+
+
+    </style>        
+</head>
+<body>
+    <div class="navbar">
+        <div class="home-btn">
+            <div class="btn">HOME</div>
+            <div class="btn">BAND</div>
+            <div class="btn">TOUR</div>
+            <div class="btn">CONTACT</div>
+            <div class="btn dropdown">MORE
+                <div class="dropdown-content">
+                    <a href="https://www.google.com">Merchandise</a>
+                    <a href="#">Extra</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="search-btn">
+            <img class="search-icon" src="./iconSearch.svg">            
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="header-pic">
+            <div class="slideshow-pic">
+                <img src="./w3-pic1.jpg" width="100%" height="100%">
+                <div class="text-pic">
+                    <div class="title">Los Angeles</div>
+                    <div class="sub">We had best time playing at Venice Beach!</div>
+                </div>
+            </div>
+            <div class="slideshow-pic">
+                <img src="./w3-pic2.jpg" width="100%">
+                <div class="text-pic">
+                    <div class="title">New York</div>
+                    <div class="sub">The atmosphere in New York is lorem ipsum.</div>
+                </div>
+            </div>
+            <div class="slideshow-pic">
+                <img src="./w3-pic3.jpg" width="100%">
+                <div class="text-pic">
+                    <div class="title">Chicago</div>
+                    <div class="sub">Thankyou, Chicago - A night we won't forget. </div>
+                </div>
+            </div>
+        </div>
+        <div class="descript">
+            <div class="title-descript">THE BAND</div>
+            <div class="sub-title-descript">We Love Music</div>
+            <p class="text-descript">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci officia optio deserunt, laborum laudantium soluta deleniti nihil numquam eum, ex obcaecati vitae, sed doloribus voluptates ipsam quo ab sapiente magnam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta maiores aperiam ullam veritatis veniam, explicabo officia nostrum nemo facere ab dolor eum non quae similique corporis, beatae molestiae est quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sapiente officia beatae aliquam eligendi quos, iste totam assumenda veniam necessitatibus eos et maiores rerum ullam voluptatem! Hic maxime rem minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil unde doloremque eum necessitatibus quos at architecto consectetur eius blanditiis esse. Repudiandae illo fugiat molestiae, ut commodi suscipit nulla perferendis consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, atque quisquam. Repudiandae quaerat, amet odit ratione tempore inventore cupiditate illum iusto soluta! Rerum iste eum vitae corrupti a cumque asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quasi modi voluptate impedit, nesciunt dolores, minima placeat cupiditate eveniet voluptatum libero id sunt sapiente et ea quod dolorum, tempora ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, deserunt, voluptatum, praesentium molestiae maxime beatae molestias possimus ab voluptatibus soluta incidunt hic libero dolor aut. Doloribus id molestias ipsum? Officiis.</p>
+            <div class="content-descript">
+                    <div class="member-content">
+                        <div class="name-member">Name</div>
+                        <div class="pic-member">
+                            <img src="./bandmember.jpg" width="100%" style="margin: 0;">
+                        </div>
+                    </div>
+                    <div class="member-content">
+                        <div class="name-member">Name</div>
+                        <div class="pic-member">
+                            <img src="./bandmember.jpg" width="100%" style="margin: 0;">
+                        </div>
+                    </div>
+                    <div class="member-content">
+                        <div class="name-member">Name</div>
+                        <div class="pic-member">
+                            <img src="./bandmember.jpg" width="100%" style="margin: 0;">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    let slideIndex = 0
+    showSlides()
+
+    function showSlides(){
+        let i,
+        slides = document.getElementsByClassName("slideshow-pic")
+
+        for(i = 0; i < slides.length; i++){
+            slides[i].style.display = "none"
+        }
+        slideIndex++
+
+        if(slideIndex > slides.length){slideIndex = 1}
+        slides[slideIndex - 1].style.display = "block"
+
+        setTimeout(showSlides, 2000) 
+
+    }
+</script>
+
+</html>
