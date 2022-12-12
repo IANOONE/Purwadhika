@@ -1,0 +1,55 @@
+.fruit-input{
+    height:500px;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr 4fr;
+}
+
+.inputFruit{
+    text-align: center;
+    border-radius: 7px;
+    height: 30px;
+    width: 250px;
+    font-size: 17px;
+    color: grey;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(47, 47, 180);
+}
+
+.button-add{
+    width: 150px;
+    height: 35px;
+    border-radius: 15px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    background-color: gainsboro;
+}
+
+.searchFruit{
+    width: inherit;
+    padding: 10px 15px;
+}
+
+.searchBar{
+    width: inherit;
+    border: 1 solid black;
+    height: 20px;
+}
+
+
+.listFruit{
+    width: inherit;
+}
+
+.fruit-list{
+    height: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.75fr 9.25fr;
+    grid-gap: 10px;
+    overflow:auto;
+}
+
